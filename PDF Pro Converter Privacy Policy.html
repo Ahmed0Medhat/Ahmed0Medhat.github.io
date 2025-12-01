@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>سياسة الخصوصية — PDF Pro Converter</title>
+
+  <!-- Google Font (اختياري) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary-color: #C74643; /* من 0xFFC74643 */
+      --bg: #ffffff;
+      --muted: #6b6b6b;
+      --card: #f9f9f9;
+      --radius: 10px;
+      --maxw: 900px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Cairo', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #fff 0%, #fff 100%);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      background:var(--bg);
+      border-radius:12px;
+      box-shadow:0 6px 30px rgba(0,0,0,0.06);
+      overflow:hidden;
+    }
+
+    header{
+      background: linear-gradient(90deg,var(--primary-color), #ff6b5f);
+      color:white;
+      padding:22px;
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    header .title{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+    .logo{
+      width:56px;height:56px;border-radius:10px;
+      background:rgba(255,255,255,0.12);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;font-size:18px;color:white;
+      box-shadow:0 3px 12px rgba(0,0,0,0.12);
+    }
+    header h1{margin:0;font-size:18px}
+    header p{margin:0;opacity:.95;font-size:13px}
+
+    .lang-switch{
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+    .lang-switch button{
+      background:transparent;color:white;border:1px solid rgba(255,255,255,0.18);
+      padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:600;
+    }
+    .lang-switch button.active{
+      background:rgba(255,255,255,0.12);
+    }
+
+    main{
+      padding:22px;
+      display:grid;
+      gap:20px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+    }
+    h2{margin-top:0}
+    p, li{line-height:1.6;color:var(--muted)}
+    ul{padding-left:18px}
+    .two-col{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:860px){ .two-col{grid-template-columns:1fr 320px;} }
+
+    .meta{
+      font-size:13px;color:#fff;opacity:.95;
+    }
+
+    footer{
+      padding:18px 22px;border-top:1px solid #f0f0f0;font-size:13px;color:var(--muted);
+    }
+
+    /* rtl/ltr containers */
+    .content-ar{direction:rtl;text-align:right;display:block}
+    .content-en{direction:ltr;text-align:left;display:none}
+
+    /* small helpers */
+    .muted{color:var(--muted);font-size:13px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:8px;background:rgba(0,0,0,0.04);font-weight:600;color:var(--muted);font-size:13px}
+    a{color:var(--primary-color);text-decoration:none}
+    pre{background:#fff;border-radius:8px;padding:12px;color:#333;overflow:auto}
+  </style>
+
+  <script>
+    function setLang(lang){
+      const ar = document.querySelectorAll('.content-ar');
+      const en = document.querySelectorAll('.content-en');
+      if(lang === 'en'){
+        en.forEach(e => e.style.display='block');
+        ar.forEach(e => e.style.display='none');
+        document.documentElement.lang = 'en';
+        document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+        document.getElementById('btn-en').classList.add('active');
+      } else {
+        en.forEach(e => e.style.display='none');
+        ar.forEach(e => e.style.display='block');
+        document.documentElement.lang = 'ar';
+        document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+        document.getElementById('btn-ar').classList.add('active');
+      }
+    }
+
+    // on load set default to Arabic
+    window.addEventListener('DOMContentLoaded', () => {
+      setLang('ar');
+    });
+  </script>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="title">
+        <div class="logo">PDF</div>
+        <div>
+          <h1>PDF Pro Converter</h1>
+          <p class="meta">محول ملفات PDF احترافي — تحويل، ضغط، ودمج الملفات</p>
+        </div>
+      </div>
+
+      <div class="lang-switch" aria-hidden="false">
+        <button id="btn-ar" class="lang-btn" onclick="setLang('ar')">العربية</button>
+        <button id="btn-en" class="lang-btn" onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="card two-col">
+        <!-- Arabic column (default) -->
+        <div>
+          <div class="content-ar">
+            <h2>سياسة الخصوصية</h2>
+            <p>مرحبًا بك في <strong>PDF Pro Converter</strong> — نحن نحترم خصوصيتك ونلتزم بحماية معلوماتك الشخصية. توضح هذه السياسة أنواع البيانات التي نجمعها وكيفية استخدامها ومشاركتها.</p>
+
+            <h3>1. ما البيانات التي نجمعها؟</h3>
+            <ul>
+              <li><strong>الملفات/الوثائق:</strong> التطبيق يعالج الملفات التي تختارها (صور، PDF، Word، Excel) لتحويلها/ضغطها/دمجها. هذه الملفات لا تُرسل للخوادم ما لم تختَر خدمة سحابية مضافة مستقبلًا.</li>
+              <li><strong>بيانات الجهاز:</strong> مثل نوع الجهاز ونظام التشغيل وإصدار التطبيق لأغراض تحسين الأداء.</li>
+              <li><strong>بيانات الاستخدام:</strong> معلومات عن تكرار استخدام الميزات، لأغراض تحليلية وتحسين تجربة المستخدم.</li>
+              <li><strong>معلومات الدفع:</strong> عند الاشتراك، تُدار عمليات الدفع عبر متاجر التطبيقات (Google Play / App Store) ولا نقوم بتخزين بيانات بطاقة الائتمان على خوادمنا.</li>
+            </ul>
+
+            <h3>2. كيف نستخدم البيانات؟</h3>
+            <ul>
+              <li>تمكين وظائف التطبيق (مثل تحويل الملفات، الحفظ والمشاركة).</li>
+              <li>تحسين التطبيق وإصلاح الأعطال.</li>
+              <li>إدارة الاشتراكات وإلغاء الإعلانات للمشتركين.</li>
+              <li>الامتثال للقوانين وحماية حقوقنا القانونية.</li>
+            </ul>
+
+            <h3>3. الإعلانات وطرق الربح</h3>
+            <p>نستخدم خدمات Google AdMob لعرض <strong>إعلانات بانر</strong> و<strong>إعلانات فيديو مكافئة (Rewarded)</strong>. عند مشاهدة إعلانات مكافئة، قد تتلقى مزايا داخل التطبيق. الاشتراك المدفوع يزيل كل الإعلانات.</p>
+
+            <h3>4. الاشتراكات والمدفوعات</h3>
+            <p>الاشتراكات تتم عبر مزودي الدفع التابعين للمتاجر (Google Play / App Store). نتحقق من حالة الاشتراك لعرض/إخفاء الإعلانات. خطط الاشتراك:</p>
+            <ul>
+              <li>شهري: 20 ج.م</li>
+              <li>سنوي: 200 ج.م</li>
+            </ul>
+
+            <h3>5. مشاركة بياناتك مع أطراف ثالثة</h3>
+            <p>قد نستخدم خدمات طرف ثالث لمهمات مثل الإعلانات (AdMob)، التحليلات، وخدمات الدفع. هذه الخدمات تعمل بموجب سياسات الخصوصية الخاصة بها.</p>
+
+            <h3>6. أمن البيانات</h3>
+            <p>نطبق ممارسات أمنية معقولة لحماية بياناتك على مستوى التطبيق. ومع ذلك، لا يمكن ضمان أمان نُظم الاتصالات بنسبة 100%.</p>
+
+            <h3>7. حفظ البيانات ومدة الاحتفاظ</h3>
+            <p>الملفات التي تقوم بتحويلها تُخزن محليًا على جهازك. نحتفظ بسجلات تشغيلية وتحليلات لفترة معقولة لتحسين الخدمة.</p>
+
+            <h3>8. خصوصية الأطفال</h3>
+            <p>التطبيق غير موجه للأطفال دون 13 سنة. إذا اكتشفنا جمع بيانات من طفل دون موافقة ولي أمر، سنتخذ خطوات لحذف تلك البيانات.</p>
+
+            <h3>9. حقوقك</h3>
+            <p>لديك الحق في طلب الوصول، التصحيح، أو حذف بياناتك الشخصية. اتصل بنا عبر معلومات التواصل أدناه لتقديم طلب.</p>
+
+            <h3>10. تحديثات السياسة</h3>
+            <p>قد نحدّث هذه السياسة من وقت لآخر. سنعمل على إعلام المستخدمين داخل التطبيق أو عبر البريد الإلكتروني عند وجود تغييرات جوهرية.</p>
+
+            <h3>اتصل بنا</h3>
+            <p>لأي استفسارات بخصوص الخصوصية: <br>
+               البريد: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a><br>
+               أو افتح Issue في مستودع GitHub الخاص بالتطبيق.</p>
+          </div>
+
+          <!-- English content -->
+          <div class="content-en">
+            <h2>Privacy Policy</h2>
+            <p>Welcome to <strong>PDF Pro Converter</strong>. We respect your privacy and are committed to protecting your personal information. This policy explains what data we collect, how we use it, and with whom we share it.</p>
+
+            <h3>1. What data we collect</h3>
+            <ul>
+              <li><strong>Files/Documents:</strong> The app processes files you select (images, PDFs, Word, Excel) for conversion/compression/merge. Files are not uploaded to our servers unless you use an explicit cloud feature in the future.</li>
+              <li><strong>Device data:</strong> Device type, OS version and app version for performance improvements.</li>
+              <li><strong>Usage data:</strong> Feature usage statistics for analytics and product improvements.</li>
+              <li><strong>Payment info:</strong> Subscription purchases are handled by app stores; we do not store full credit card details on our servers.</li>
+            </ul>
+
+            <h3>2. How we use data</h3>
+            <ul>
+              <li>To enable app features (convert, save, share).</li>
+              <li>To improve app performance and fix bugs.</li>
+              <li>To manage subscriptions and remove ads for paid users.</li>
+              <li>To comply with laws and protect our rights.</li>
+            </ul>
+
+            <h3>3. Ads & monetization</h3>
+            <p>We use Google AdMob for <strong>banner</strong> and <strong>rewarded video</strong> ads. Rewarded ads may grant in-app benefits. Subscriptions remove all ads.</p>
+
+            <h3>4. Subscriptions & payments</h3>
+            <p>Subscriptions are handled by Google Play / App Store. We verify subscription status to enable premium benefits. Plans:</p>
+            <ul>
+              <li>Monthly: 20 EGP</li>
+              <li>Yearly: 200 EGP</li>
+            </ul>
+
+            <h3>5. Sharing data with third parties</h3>
+            <p>We use third-party services for ads (AdMob), analytics and payments. These services have their own privacy policies.</p>
+
+            <h3>6. Data security</h3>
+            <p>We implement reasonable security measures, but cannot guarantee 100% security of communications.</p>
+
+            <h3>7. Data retention</h3>
+            <p>Converted files are stored locally on your device. We retain logs and analytics for a reasonable period to improve the service.</p>
+
+            <h3>8. Children</h3>
+            <p>The app is not intended for children under 13. If we discover data collected from a child without parental consent, we will remove it.</p>
+
+            <h3>9. Your rights</h3>
+            <p>You may request access, correction, or deletion of your personal data. Contact us using the details below.</p>
+
+            <h3>10. Policy updates</h3>
+            <p>We may update this policy from time to time. Significant changes will be communicated to users.</p>
+
+            <h3>Contact</h3>
+            <p>For privacy inquiries: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+          </div>
+        </div>
+
+        <!-- right column: quick info / summary -->
+        <aside>
+          <div class="card">
+            <h3>ملخص سريع</h3>
+            <p class="muted">فيما يلي أهم النقاط التي تهم المستخدم:</p>
+            <ul>
+              <li>الملفات التي تختارها تُعالج محليًا على جهازك ما لم تختَر رفعها سحابيًا.</li>
+              <li>نستخدم AdMob للإعلانات — الاشتراك يزيل الإعلانات.</li>
+              <li>المدفوعات عبر Google Play/App Store، ولا نخزن بيانات البطاقة.</li>
+              <li>للاستفسار: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h3>التوافق</h3>
+            <p class="muted">التطبيق يعمل على Android، iOS، Web وDesktop (بعض الميزات قد تختلف حسب المنصة)</p>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h3>سياسات الطرف الثالث</h3>
+            <p class="muted">نستخدم خدمات مثل Google AdMob وStoreKit/Google Play Billing. راجع سياساتهم لمزيد من التفاصيل.</p>
+            <p style="margin-top:10px"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a></p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="muted">حقوق الملكية © <strong>PDF Pro Converter</strong> — جميع الحقوق محفوظة.</div>
+        <div class="muted">آخر تحديث: <strong>2025-11-30</strong></div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
