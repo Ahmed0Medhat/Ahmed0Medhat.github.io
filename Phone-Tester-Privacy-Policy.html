@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Phone Test Pro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        body[dir="rtl"] {
+            font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header {
+            text-align: center;
+            color: #fff;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .policy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 3rem 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .language-switch {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .language-switch button {
+            margin: 0 5px;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .language-switch button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .policy-content h3 {
+            color: #667eea;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #f0f0f0;
+        }
+        .policy-content h4 {
+            color: #764ba2;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .policy-content p, .policy-content li {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .policy-content ul {
+            padding-left: 2rem;
+        }
+        body[dir="rtl"] .policy-content ul {
+            padding-left: 0;
+            padding-right: 2rem;
+        }
+        .policy-content strong {
+            color: #333;
+            font-weight: 600;
+        }
+        .last-updated {
+            text-align: center;
+            color: #888;
+            font-style: italic;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid #f0f0f0;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .contact-box h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .contact-box a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+        .permissions-table {
+            margin-top: 1.5rem;
+            overflow-x: auto;
+        }
+        .permissions-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .permissions-table th {
+            background: #667eea;
+            color: #fff;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        body[dir="rtl"] .permissions-table th,
+        body[dir="rtl"] .permissions-table td {
+            text-align: right;
+        }
+        .permissions-table td {
+            padding: 12px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .permissions-table tr:hover {
+            background: #f8f9fa;
+        }
+        @media (max-width: 768px) {
+            .policy-container {
+                padding: 2rem 1.5rem;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="phoneTestIcon.png" alt="Phone Test Pro Icon">
+        <h1 id="page-title">Privacy Policy</h1>
+        <p class="subtitle" id="page-subtitle">Phone Test Pro</p>
+    </div>
+
+    <div class="policy-container">
+        <div class="language-switch">
+            <button class="btn btn-primary" onclick="setLanguage('en')">English</button>
+            <button class="btn btn-outline-primary" onclick="setLanguage('ar')">عربي</button>
+        </div>
+
+        <div id="policy-content" class="policy-content">
+            <!-- Content will be loaded by JavaScript -->
+        </div>
+
+        <div class="last-updated">
+            <p id="last-updated-text">Last updated: December 17, 2025</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Localization Script -->
+    <script>
+        const policyTexts = {
+            en: `
+                <h3>Introduction</h3>
+                <p>Ahmed Medhat ("we", "our", or "us") operates the <strong>Phone Test Pro</strong> mobile application (the "Service").</p>
+                <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+
+                <h3>Information Collection and Use</h3>
+                
+                <h4>Information We Collect</h4>
+                
+                <p><strong>Device Information:</strong></p>
+                <ul>
+                    <li>We access device sensors (accelerometer, gyroscope, magnetometer, light sensor, proximity sensor, barometer) only for diagnostic testing purposes</li>
+                    <li>Device specifications (model, manufacturer, OS version, screen size, battery info)</li>
+                    <li>Hardware status information for testing purposes</li>
+                </ul>
+
+                <p><strong>Location Information:</strong></p>
+                <ul>
+                    <li>GPS coordinates (only when testing GPS/Location features)</li>
+                    <li>WiFi network information (for connectivity testing)</li>
+                    <li>This data is not stored or transmitted to external servers</li>
+                </ul>
+
+                <p><strong>Camera & Microphone:</strong></p>
+                <ul>
+                    <li>Camera access (only for camera testing features)</li>
+                    <li>Microphone access (only for audio recording tests)</li>
+                    <li>No photos, videos, or audio recordings are stored or transmitted</li>
+                </ul>
+
+                <p><strong>Permissions Used:</strong></p>
+                <ul>
+                    <li><strong>Internet:</strong> For displaying ads and verifying in-app purchases</li>
+                    <li><strong>Camera:</strong> Camera hardware testing</li>
+                    <li><strong>Microphone:</strong> Microphone and speaker testing</li>
+                    <li><strong>Location:</strong> GPS testing and WiFi scanning</li>
+                    <li><strong>Bluetooth:</strong> Bluetooth availability testing</li>
+                    <li><strong>NFC:</strong> NFC tag scanning tests</li>
+                    <li><strong>Vibrate:</strong> Vibration motor testing</li>
+                </ul>
+
+                <h3>How We Use Your Information</h3>
+                <p>We use the collected information solely for:</p>
+                <ul>
+                    <li>Providing diagnostic test results</li>
+                    <li>Displaying advertisements (for non-premium users)</li>
+                    <li>Processing in-app purchases</li>
+                    <li>Improving app functionality</li>
+                </ul>
+
+                <p><strong>We do NOT:</strong></p>
+                <ul>
+                    <li>Store personal information on external servers</li>
+                    <li>Share your data with third parties (except service providers below)</li>
+                    <li>Track your location continuously</li>
+                    <li>Access your photos, contacts, or messages</li>
+                    <li>Record audio or video without your explicit action</li>
+                </ul>
+
+                <h3>Third-Party Services</h3>
+                
+                <h4>Google AdMob</h4>
+                <p>We use Google AdMob to display advertisements. AdMob may collect:</p>
+                <ul>
+                    <li>Device advertising ID</li>
+                    <li>IP address</li>
+                    <li>Device information</li>
+                    <li>Ad interaction data</li>
+                </ul>
+                <p>AdMob Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+                <h4>Google Play In-App Billing</h4>
+                <p>We use Google Play's In-App Billing for subscription management:</p>
+                <ul>
+                    <li>Purchase information is handled by Google Play</li>
+                    <li>We only receive transaction confirmation</li>
+                    <li>No credit card information is accessed by our app</li>
+                </ul>
+                <p>Google Play Privacy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+                <h3>Data Storage and Security</h3>
+                <ul>
+                    <li>All diagnostic data is processed locally on your device</li>
+                    <li>Test results are not transmitted to external servers</li>
+                    <li>We implement industry-standard security measures</li>
+                    <li>Subscription status is stored locally using encrypted storage</li>
+                </ul>
+
+                <h3>Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access sensor and hardware information on your device</li>
+                    <li>Deny permissions at any time in device settings</li>
+                    <li>Request deletion of any stored data</li>
+                    <li>Cancel your subscription anytime</li>
+                </ul>
+
+                <h3>Children's Privacy</h3>
+                <p>Our Service is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you are a parent and discover your child has provided us with personal information, please contact us.</p>
+
+                <h3>Data Retention</h3>
+                <ul>
+                    <li><strong>Test results:</strong> Stored locally until cleared by user</li>
+                    <li><strong>Subscription status:</strong> Retained until subscription ends</li>
+                    <li><strong>No diagnostic data</strong> is retained on external servers</li>
+                </ul>
+
+                <h3>Summary of Permissions</h3>
+                <div class="permissions-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Permission</th>
+                                <th>Purpose</th>
+                                <th>Data Storage</th>
+                                <th>Data Sharing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Internet</td>
+                                <td>Ads & purchases</td>
+                                <td>None</td>
+                                <td>AdMob only</td>
+                            </tr>
+                            <tr>
+                                <td>Camera</td>
+                                <td>Hardware testing</td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Microphone</td>
+                                <td>Audio testing</td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Location</td>
+                                <td>GPS/WiFi testing</td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Bluetooth</td>
+                                <td>BT testing</td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>NFC</td>
+                                <td>Tag scanning</td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Vibrate</td>
+                                <td>Haptic testing</td>
+                                <td>None</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>GDPR Compliance (EU Users)</h3>
+                <p>If you are in the European Economic Area (EEA), you have additional rights:</p>
+                <ul>
+                    <li>Right to access your data</li>
+                    <li>Right to rectification</li>
+                    <li>Right to erasure</li>
+                    <li>Right to restrict processing</li>
+                    <li>Right to data portability</li>
+                    <li>Right to object</li>
+                </ul>
+                <p>To exercise these rights, contact us at <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a></p>
+
+                <h3>Changes to This Privacy Policy</h3>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+
+                <h3>Consent</h3>
+                <p>By using Phone Test Pro, you consent to our Privacy Policy and agree to its terms.</p>
+
+                <div class="contact-box">
+                    <h4>Contact Us</h4>
+                    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                    <p><strong>Email:</strong> <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a></p>
+                </div>
+            `,
+            ar: `
+                <h3>المقدمة</h3>
+                <p>أحمد مدحت ("نحن" أو "لنا" أو "الخاص بنا") يدير تطبيق الهاتف المحمول <strong>تشخيص الجهاز المحترف</strong> ("الخدمة").</p>
+                <p>تُعلمك هذه الصفحة بسياساتنا فيما يتعلق بجمع واستخدام والكشف عن البيانات الشخصية عند استخدام خدمتنا والخيارات المتاحة لك فيما يتعلق بتلك البيانات.</p>
+
+                <h3>جمع المعلومات واستخدامها</h3>
+                
+                <h4>المعلومات التي نجمعها</h4>
+                
+                <p><strong>معلومات الجهاز:</strong></p>
+                <ul>
+                    <li>نصل إلى مستشعرات الجهاز (مقياس التسارع، الجيروسكوب، المغناطيس، مستشعر الضوء، مستشعر القرب، البارومتر) فقط لأغراض الاختبار التشخيصي</li>
+                    <li>مواصفات الجهاز (الطراز، الشركة المصنعة، إصدار نظام التشغيل، حجم الشاشة، معلومات البطارية)</li>
+                    <li>معلومات حالة الأجهزة لأغراض الاختبار</li>
+                </ul>
+
+                <p><strong>معلومات الموقع:</strong></p>
+                <ul>
+                    <li>إحداثيات GPS (فقط عند اختبار ميزات GPS/الموقع)</li>
+                    <li>معلومات شبكة WiFi (لاختبار الاتصال)</li>
+                    <li>لا يتم تخزين هذه البيانات أو نقلها إلى خوادم خارجية</li>
+                </ul>
+
+                <p><strong>الكاميرا والميكروفون:</strong></p>
+                <ul>
+                    <li>الوصول إلى الكاميرا (فقط لميزات اختبار الكاميرا)</li>
+                    <li>الوصول إلى الميكروفون (فقط لاختبارات تسجيل الصوت)</li>
+                    <li>لا يتم تخزين أو نقل أي صور أو مقاطع فيديو أو تسجيلات صوتية</li>
+                </ul>
+
+                <p><strong>الأذونات المستخدمة:</strong></p>
+                <ul>
+                    <li><strong>الإنترنت:</strong> لعرض الإعلانات والتحقق من عمليات الشراء داخل التطبيق</li>
+                    <li><strong>الكاميرا:</strong> اختبار أجهزة الكاميرا</li>
+                    <li><strong>الميكروفون:</strong> اختبار الميكروفون والسماعات</li>
+                    <li><strong>الموقع:</strong> اختبار GPS ومسح WiFi</li>
+                    <li><strong>البلوتوث:</strong> اختبار توفر البلوتوث</li>
+                    <li><strong>NFC:</strong> اختبارات مسح علامات NFC</li>
+                    <li><strong>الاهتزاز:</strong> اختبار محرك الاهتزاز</li>
+                </ul>
+
+                <h3>كيف نستخدم معلوماتك</h3>
+                <p>نستخدم المعلومات المجمعة فقط من أجل:</p>
+                <ul>
+                    <li>توفير نتائج الاختبار التشخيصي</li>
+                    <li>عرض الإعلانات (للمستخدمين غير المميزين)</li>
+                    <li>معالجة عمليات الشراء داخل التطبيق</li>
+                    <li>تحسين وظائف التطبيق</li>
+                </ul>
+
+                <p><strong>نحن لا نقوم بـ:</strong></p>
+                <ul>
+                    <li>تخزين المعلومات الشخصية على خوادم خارجية</li>
+                    <li>مشاركة بياناتك مع أطراف ثالثة (باستثناء مزودي الخدمة أدناه)</li>
+                    <li>تتبع موقعك بشكل مستمر</li>
+                    <li>الوصول إلى صورك أو جهات الاتصال أو الرسائل</li>
+                    <li>تسجيل الصوت أو الفيديو بدون إجراء صريح منك</li>
+                </ul>
+
+                <h3>خدمات الطرف الثالث</h3>
+                
+                <h4>Google AdMob</h4>
+                <p>نستخدم Google AdMob لعرض الإعلانات. قد يجمع AdMob:</p>
+                <ul>
+                    <li>معرف إعلان الجهاز</li>
+                    <li>عنوان IP</li>
+                    <li>معلومات الجهاز</li>
+                    <li>بيانات التفاعل مع الإعلانات</li>
+                </ul>
+                <p>سياسة خصوصية AdMob: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+                <h4>Google Play للفوترة داخل التطبيق</h4>
+                <p>نستخدم Google Play للفوترة داخل التطبيق لإدارة الاشتراكات:</p>
+                <ul>
+                    <li>يتم التعامل مع معلومات الشراء بواسطة Google Play</li>
+                    <li>نتلقى فقط تأكيد المعاملة</li>
+                    <li>لا يتم الوصول إلى معلومات بطاقة الائتمان بواسطة تطبيقنا</li>
+                </ul>
+                <p>خصوصية Google Play: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+                <h3>تخزين البيانات والأمان</h3>
+                <ul>
+                    <li>تتم معالجة جميع البيانات التشخيصية محليًا على جهازك</li>
+                    <li>لا يتم نقل نتائج الاختبار إلى خوادم خارجية</li>
+                    <li>نطبق تدابير أمان قياسية في الصناعة</li>
+                    <li>يتم تخزين حالة الاشتراك محليًا باستخدام تخزين مشفر</li>
+                </ul>
+
+                <h3>حقوقك</h3>
+                <p>لديك الحق في:</p>
+                <ul>
+                    <li>الوصول إلى معلومات المستشعر والأجهزة على جهازك</li>
+                    <li>رفض الأذونات في أي وقت في إعدادات الجهاز</li>
+                    <li>طلب حذف أي بيانات مخزنة</li>
+                    <li>إلغاء اشتراكك في أي وقت</li>
+                </ul>
+
+                <h3>خصوصية الأطفال</h3>
+                <p>خدمتنا غير موجهة للأطفال دون سن 13 عامًا. نحن لا نجمع عن قصد معلومات شخصية من الأطفال دون سن 13 عامًا. إذا كنت أحد الوالدين واكتشفت أن طفلك قد قدم لنا معلومات شخصية، يرجى الاتصال بنا.</p>
+
+                <h3>الاحتفاظ بالبيانات</h3>
+                <ul>
+                    <li><strong>نتائج الاختبار:</strong> مخزنة محليًا حتى يقوم المستخدم بمسحها</li>
+                    <li><strong>حالة الاشتراك:</strong> محتفظ بها حتى انتهاء الاشتراك</li>
+                    <li><strong>لا يتم الاحتفاظ</strong> ببيانات التشخيص على خوادم خارجية</li>
+                </ul>
+
+                <h3>ملخص الأذونات</h3>
+                <div class="permissions-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>الإذن</th>
+                                <th>الغرض</th>
+                                <th>تخزين البيانات</th>
+                                <th>مشاركة البيانات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>الإنترنت</td>
+                                <td>الإعلانات والمشتريات</td>
+                                <td>لا شيء</td>
+                                <td>AdMob فقط</td>
+                            </tr>
+                            <tr>
+                                <td>الكاميرا</td>
+                                <td>اختبار الأجهزة</td>
+                                <td>لا شيء</td>
+                                <td>لا شيء</td>
+                            </tr>
+                            <tr>
+                                <td>الميكروفون</td>
+                                <td>اختبار الصوت</td>
+                                <td>لا شيء</td>
+                                <td>لا شيء</td>
+                            </tr>
+                            <tr>
+                                <td>الموقع</td>
+                                <td>اختبار GPS/WiFi</td>
+                                <td>لا شيء</td>
+                                <td>لا شيء</td>
+                            </tr>
+                            <tr>
+                                <td>البلوتوث</td>
+                                <td>اختبار البلوتوث</td>
+                                <td>لا شيء</td>
+                                <td>لا شيء</td>
+                            </tr>
+                            <tr>
+                                <td>NFC</td>
+                                <td>مسح العلامات</td>
+                                <td>لا شيء</td>
+                                <td>لا شيء</td>
+                            </tr>
+                            <tr>
+                                <td>الاهتزاز</td>
+                                <td>اختبار الاهتزاز</td>
+                                <td>لا شيء</td>
+                                <td>لا شيء</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>الامتثال للائحة العامة لحماية البيانات (مستخدمو الاتحاد الأوروبي)</h3>
+                <p>إذا كنت في المنطقة الاقتصادية الأوروبية (EEA)، فلديك حقوق إضافية:</p>
+                <ul>
+                    <li>الحق في الوصول إلى بياناتك</li>
+                    <li>الحق في التصحيح</li>
+                    <li>الحق في المحو</li>
+                    <li>الحق في تقييد المعالجة</li>
+                    <li>الحق في نقل البيانات</li>
+                    <li>الحق في الاعتراض</li>
+                </ul>
+                <p>لممارسة هذه الحقوق، اتصل بنا على <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a></p>
+
+                <h3>التغييرات على سياسة الخصوصية هذه</h3>
+                <p>قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنخطرك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة على هذه الصفحة وتحديث تاريخ "آخر تحديث".</p>
+
+                <h3>الموافقة</h3>
+                <p>باستخدام تشخيص الجهاز المحترف، فإنك توافق على سياسة الخصوصية الخاصة بنا وتوافق على شروطها.</p>
+
+                <div class="contact-box">
+                    <h4>اتصل بنا</h4>
+                    <p>إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا:</p>
+                    <p><strong>البريد الإلكتروني:</strong> <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a></p>
+                </div>
+            `
+        };
+
+        function setLanguage(lang) {
+            const contentDiv = document.getElementById('policy-content');
+            const pageTitle = document.getElementById('page-title');
+            const pageSubtitle = document.getElementById('page-subtitle');
+            const lastUpdatedText = document.getElementById('last-updated-text');
+            const body = document.body;
+            
+            if(lang === 'ar') {
+                body.setAttribute('dir', 'rtl');
+                body.setAttribute('lang', 'ar');
+                pageTitle.innerText = 'سياسة الخصوصية';
+                pageSubtitle.innerText = 'تشخيص الجهاز المحترف';
+                lastUpdatedText.innerText = 'آخر تحديث: 17 ديسمبر 2025';
+                document.title = 'سياسة الخصوصية - تشخيص الجهاز المحترف';
+            } else {
+                body.setAttribute('dir', 'ltr');
+                body.setAttribute('lang', 'en');
+                pageTitle.innerText = 'Privacy Policy';
+                pageSubtitle.innerText = 'Phone Test Pro';
+                lastUpdatedText.innerText = 'Last updated: December 17, 2025';
+                document.title = 'Privacy Policy - Phone Test Pro';
+            }
+            contentDiv.innerHTML = policyTexts[lang];
+        }
+
+        // Load English content by default
+        setLanguage('en');
+    </script>
+</body>
+</html>
