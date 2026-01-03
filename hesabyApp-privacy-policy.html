@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Hesaby | سياسة الخصوصية - حسابي كام</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts - Cairo for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary-color: #6366F1;
+            --primary-dark: #4F46E5;
+            --accent-color: #8B5CF6;
+            --success-color: #10B981;
+            --bg-light: #F8FAFC;
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+        }
+        
+        body.rtl {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            padding: 80px 0 60px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 200%;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            transform: rotate(-15deg);
+        }
+        
+        .hero-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero-icon i {
+            font-size: 36px;
+        }
+        
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+        body.rtl .lang-switcher {
+            right: auto;
+            left: 20px;
+        }
+        
+        .lang-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .lang-btn:hover {
+            background: rgba(255,255,255,0.3);
+            color: white;
+        }
+        
+        .content-section {
+            padding: 60px 0;
+        }
+        
+        .policy-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            margin-bottom: 24px;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .policy-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+        
+        .policy-card .icon-wrapper {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .icon-purple { background: rgba(99, 102, 241, 0.1); color: var(--primary-color); }
+        .icon-green { background: rgba(16, 185, 129, 0.1); color: var(--success-color); }
+        .icon-orange { background: rgba(249, 115, 22, 0.1); color: #F97316; }
+        .icon-blue { background: rgba(59, 130, 246, 0.1); color: #3B82F6; }
+        .icon-pink { background: rgba(236, 72, 153, 0.1); color: #EC4899; }
+        .icon-teal { background: rgba(20, 184, 166, 0.1); color: #14B8A6; }
+        
+        .policy-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+        
+        .policy-card p, .policy-card ul {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        
+        .policy-card ul {
+            padding-left: 20px;
+        }
+        
+        body.rtl .policy-card ul {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+        
+        .policy-card ul li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+            border-radius: 16px;
+            padding: 24px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        body.rtl .highlight-box {
+            border-left: none;
+            border-right: 4px solid var(--primary-color);
+        }
+        
+        .footer-section {
+            background: var(--text-dark);
+            color: rgba(255,255,255,0.7);
+            padding: 40px 0;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+        
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255,255,255,0.1);
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        
+        .app-badge img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        
+        .last-updated {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            margin-top: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0 40px;
+            }
+            
+            .policy-card {
+                padding: 24px;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body id="body">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="lang-switcher">
+            <button class="btn lang-btn" onclick="toggleLanguage()">
+                <span id="lang-text">العربية</span>
+            </button>
+        </div>
+        
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="hero-icon mx-auto">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h1 class="display-5 fw-bold mb-3" id="title">Privacy Policy</h1>
+                    <p class="lead opacity-90" id="subtitle">
+                        Your privacy is important to us. This policy explains how Hesaby handles your information.
+                    </p>
+                    <span class="last-updated" id="last-updated">Last Updated: January 3, 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+                    <!-- Introduction -->
+                    <div class="policy-card">
+                        <div class="icon-wrapper icon-purple">
+                            <i class="bi bi-info-circle"></i>
+                        </div>
+                        <h3 id="intro-title">Introduction</h3>
+                        <p id="intro-text">
+                            Welcome to Hesaby (حسابي كام). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains what information we collect, how we use it, and what rights you have in relation to it.
+                        </p>
+                    </div>
+                    
+                    <!-- Data Collection -->
+                    <div class="policy-card">
+                        <div class="icon-wrapper icon-green">
+                            <i class="bi bi-database"></i>
+                        </div>
+                        <h3 id="collect-title">Information We Collect</h3>
+                        <p id="collect-intro">Hesaby collects minimal data to provide you with the best experience:</p>
+                        <ul id="collect-list">
+                            <li><strong>Local Data:</strong> Bill details, friends list, and expense records are stored locally on your device</li>
+                            <li><strong>Optional Cloud Sync:</strong> If you enable sync, your data is securely stored in Firebase</li>
+                            <li><strong>Google Account:</strong> Only used for authentication if you choose to enable cloud sync</li>
+                            <li><strong>Device Information:</strong> Basic analytics to improve app performance</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Data Usage -->
+                    <div class="policy-card">
+                        <div class="icon-wrapper icon-blue">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h3 id="usage-title">How We Use Your Information</h3>
+                        <ul id="usage-list">
+                            <li>To provide and maintain the bill splitting functionality</li>
+                            <li>To sync your data across devices (if enabled)</li>
+                            <li>To send you important updates about the app</li>
+                            <li>To improve our services based on usage patterns</li>
+                            <li>To display relevant advertisements (for free users)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Advertising -->
+                    <div class="policy-card">
+                        <div class="icon-wrapper icon-orange">
+                            <i class="bi bi-megaphone"></i>
+                        </div>
+                        <h3 id="ads-title">Advertising</h3>
+                        <p id="ads-text">
+                            Hesaby uses Google AdMob to display advertisements. AdMob may collect and use data to show personalized ads. You can opt out of personalized advertising in your device settings. Premium subscribers enjoy an ad-free experience.
+                        </p>
+                    </div>
+                    
+                    <!-- Data Storage -->
+                    <div class="policy-card">
+                        <div class="icon-wrapper icon-teal">
+                            <i class="bi bi-cloud-check"></i>
+                        </div>
+                        <h3 id="storage-title">Data Storage & Security</h3>
+                        <p id="storage-text">
+                            Your data is primarily stored locally on your device. If you enable cloud sync, your data is encrypted and stored securely using Google Firebase infrastructure. We implement industry-standard security measures to protect your information.
+                        </p>
+                    </div>
+                    
+                    <!-- Your Rights -->
+                    <div class="policy-card">
+                        <div class="icon-wrapper icon-pink">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <h3 id="rights-title">Your Rights</h3>
+                        <ul id="rights-list">
+                            <li><strong>Access:</strong> You can access all your data within the app</li>
+                            <li><strong>Delete:</strong> You can delete your data at any time from settings</li>
+                            <li><strong>Export:</strong> You can export your data as PDF reports</li>
+                            <li><strong>Opt-out:</strong> You can disable cloud sync and use the app offline only</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Children's Privacy -->
+                    <div class="policy-card">
+                        <div class="icon-wrapper icon-purple">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3 id="children-title">Children's Privacy</h3>
+                        <p id="children-text">
+                            Hesaby is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
+                        </p>
+                    </div>
+                    
+                    <!-- Contact -->
+                    <div class="highlight-box">
+                        <h3 id="contact-title"><i class="bi bi-envelope me-2"></i>Contact Us</h3>
+                        <p id="contact-text" class="mb-3">
+                            If you have any questions about this Privacy Policy or our practices, please contact us:
+                        </p>
+                        <p class="mb-1"><strong>Email:</strong> <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a></p>
+                        <p class="mb-0"><strong>Developer:</strong> Ahmed Medhat</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="app-badge">
+                        <i class="bi bi-receipt" style="font-size: 32px; color: var(--primary-color);"></i>
+                        <div>
+                            <div class="fw-semibold text-white" id="app-name">Hesaby</div>
+                            <small id="app-tagline">Split bills fairly</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0" id="copyright">© 2026 Hesaby. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const translations = {
+            en: {
+                langText: "العربية",
+                title: "Privacy Policy",
+                subtitle: "Your privacy is important to us. This policy explains how Hesaby handles your information.",
+                lastUpdated: "Last Updated: January 3, 2026",
+                introTitle: "Introduction",
+                introText: "Welcome to Hesaby (حسابي كام). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains what information we collect, how we use it, and what rights you have in relation to it.",
+                collectTitle: "Information We Collect",
+                collectIntro: "Hesaby collects minimal data to provide you with the best experience:",
+                collectList: `
+                    <li><strong>Local Data:</strong> Bill details, friends list, and expense records are stored locally on your device</li>
+                    <li><strong>Optional Cloud Sync:</strong> If you enable sync, your data is securely stored in Firebase</li>
+                    <li><strong>Google Account:</strong> Only used for authentication if you choose to enable cloud sync</li>
+                    <li><strong>Device Information:</strong> Basic analytics to improve app performance</li>
+                `,
+                usageTitle: "How We Use Your Information",
+                usageList: `
+                    <li>To provide and maintain the bill splitting functionality</li>
+                    <li>To sync your data across devices (if enabled)</li>
+                    <li>To send you important updates about the app</li>
+                    <li>To improve our services based on usage patterns</li>
+                    <li>To display relevant advertisements (for free users)</li>
+                `,
+                adsTitle: "Advertising",
+                adsText: "Hesaby uses Google AdMob to display advertisements. AdMob may collect and use data to show personalized ads. You can opt out of personalized advertising in your device settings. Premium subscribers enjoy an ad-free experience.",
+                storageTitle: "Data Storage & Security",
+                storageText: "Your data is primarily stored locally on your device. If you enable cloud sync, your data is encrypted and stored securely using Google Firebase infrastructure. We implement industry-standard security measures to protect your information.",
+                rightsTitle: "Your Rights",
+                rightsList: `
+                    <li><strong>Access:</strong> You can access all your data within the app</li>
+                    <li><strong>Delete:</strong> You can delete your data at any time from settings</li>
+                    <li><strong>Export:</strong> You can export your data as PDF reports</li>
+                    <li><strong>Opt-out:</strong> You can disable cloud sync and use the app offline only</li>
+                `,
+                childrenTitle: "Children's Privacy",
+                childrenText: "Hesaby is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.",
+                contactTitle: '<i class="bi bi-envelope me-2"></i>Contact Us',
+                contactText: "If you have any questions about this Privacy Policy or our practices, please contact us:",
+                appName: "Hesaby",
+                appTagline: "Split bills fairly",
+                copyright: "© 2026 Hesaby. All rights reserved."
+            },
+            ar: {
+                langText: "English",
+                title: "سياسة الخصوصية",
+                subtitle: "خصوصيتك مهمة بالنسبة لنا. توضح هذه السياسة كيفية تعامل تطبيق حسابي كام مع معلوماتك.",
+                lastUpdated: "آخر تحديث: 3 يناير 2026",
+                introTitle: "مقدمة",
+                introText: "مرحباً بك في تطبيق حسابي كام (Hesaby). نحن ملتزمون بحماية معلوماتك الشخصية وحقك في الخصوصية. توضح سياسة الخصوصية هذه المعلومات التي نجمعها وكيف نستخدمها والحقوق التي لديك فيما يتعلق بها.",
+                collectTitle: "المعلومات التي نجمعها",
+                collectIntro: "يجمع تطبيق حسابي كام الحد الأدنى من البيانات لتقديم أفضل تجربة لك:",
+                collectList: `
+                    <li><strong>البيانات المحلية:</strong> تفاصيل الفواتير وقائمة الأصدقاء وسجلات المصروفات مخزنة محلياً على جهازك</li>
+                    <li><strong>المزامنة السحابية الاختيارية:</strong> إذا فعّلت المزامنة، يتم تخزين بياناتك بشكل آمن في Firebase</li>
+                    <li><strong>حساب Google:</strong> يُستخدم فقط للمصادقة إذا اخترت تفعيل المزامنة السحابية</li>
+                    <li><strong>معلومات الجهاز:</strong> تحليلات أساسية لتحسين أداء التطبيق</li>
+                `,
+                usageTitle: "كيف نستخدم معلوماتك",
+                usageList: `
+                    <li>لتوفير وصيانة وظيفة تقسيم الفواتير</li>
+                    <li>لمزامنة بياناتك عبر الأجهزة (إذا تم التفعيل)</li>
+                    <li>لإرسال تحديثات مهمة حول التطبيق</li>
+                    <li>لتحسين خدماتنا بناءً على أنماط الاستخدام</li>
+                    <li>لعرض الإعلانات ذات الصلة (للمستخدمين المجانيين)</li>
+                `,
+                adsTitle: "الإعلانات",
+                adsText: "يستخدم تطبيق حسابي كام Google AdMob لعرض الإعلانات. قد يجمع AdMob البيانات ويستخدمها لعرض إعلانات مخصصة. يمكنك إلغاء الاشتراك في الإعلانات المخصصة من إعدادات جهازك. يتمتع المشتركون المميزون بتجربة خالية من الإعلانات.",
+                storageTitle: "تخزين البيانات والأمان",
+                storageText: "يتم تخزين بياناتك بشكل أساسي محلياً على جهازك. إذا فعّلت المزامنة السحابية، يتم تشفير بياناتك وتخزينها بشكل آمن باستخدام بنية Google Firebase التحتية. نطبق إجراءات أمنية متوافقة مع معايير الصناعة لحماية معلوماتك.",
+                rightsTitle: "حقوقك",
+                rightsList: `
+                    <li><strong>الوصول:</strong> يمكنك الوصول إلى جميع بياناتك داخل التطبيق</li>
+                    <li><strong>الحذف:</strong> يمكنك حذف بياناتك في أي وقت من الإعدادات</li>
+                    <li><strong>التصدير:</strong> يمكنك تصدير بياناتك كتقارير PDF</li>
+                    <li><strong>إلغاء الاشتراك:</strong> يمكنك تعطيل المزامنة السحابية واستخدام التطبيق دون اتصال فقط</li>
+                `,
+                childrenTitle: "خصوصية الأطفال",
+                childrenText: "تطبيق حسابي كام غير مخصص للأطفال دون سن 13 عاماً. نحن لا نجمع عن قصد معلومات شخصية من الأطفال دون 13 عاماً. إذا كنت والداً أو وصياً وتعتقد أن طفلك قد زودنا بمعلومات شخصية، يرجى الاتصال بنا.",
+                contactTitle: '<i class="bi bi-envelope ms-2"></i>اتصل بنا',
+                contactText: "إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه أو ممارساتنا، يرجى الاتصال بنا:",
+                appName: "حسابي كام",
+                appTagline: "قسّم الفاتورة بعدل",
+                copyright: "© 2026 حسابي كام. جميع الحقوق محفوظة."
+            }
+        };
+        
+        let currentLang = 'en';
+        
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
+            updateContent();
+        }
+        
+        function updateContent() {
+            const t = translations[currentLang];
+            const body = document.getElementById('body');
+            
+            if (currentLang === 'ar') {
+                body.classList.add('rtl');
+                document.documentElement.lang = 'ar';
+            } else {
+                body.classList.remove('rtl');
+                document.documentElement.lang = 'en';
+            }
+            
+            document.getElementById('lang-text').textContent = t.langText;
+            document.getElementById('title').textContent = t.title;
+            document.getElementById('subtitle').textContent = t.subtitle;
+            document.getElementById('last-updated').textContent = t.lastUpdated;
+            
+            document.getElementById('intro-title').textContent = t.introTitle;
+            document.getElementById('intro-text').textContent = t.introText;
+            
+            document.getElementById('collect-title').textContent = t.collectTitle;
+            document.getElementById('collect-intro').textContent = t.collectIntro;
+            document.getElementById('collect-list').innerHTML = t.collectList;
+            
+            document.getElementById('usage-title').textContent = t.usageTitle;
+            document.getElementById('usage-list').innerHTML = t.usageList;
+            
+            document.getElementById('ads-title').textContent = t.adsTitle;
+            document.getElementById('ads-text').textContent = t.adsText;
+            
+            document.getElementById('storage-title').textContent = t.storageTitle;
+            document.getElementById('storage-text').textContent = t.storageText;
+            
+            document.getElementById('rights-title').textContent = t.rightsTitle;
+            document.getElementById('rights-list').innerHTML = t.rightsList;
+            
+            document.getElementById('children-title').textContent = t.childrenTitle;
+            document.getElementById('children-text').textContent = t.childrenText;
+            
+            document.getElementById('contact-title').innerHTML = t.contactTitle;
+            document.getElementById('contact-text').textContent = t.contactText;
+            
+            document.getElementById('app-name').textContent = t.appName;
+            document.getElementById('app-tagline').textContent = t.appTagline;
+            document.getElementById('copyright').textContent = t.copyright;
+        }
+    </script>
+</body>
+</html>
