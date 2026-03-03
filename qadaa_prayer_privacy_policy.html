@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سياسة الخصوصية — Privacy Policy | قضاء الصلاة</title>
+
+  <!-- Bootstrap 5 RTL -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <style>
+    :root {
+      --green-primary:   #2E7D4F;
+      --green-light:     #4CAF50;
+      --green-dark:      #1B5E20;
+      --green-gradient1: #43A047;
+      --green-gradient2: #1B5E20;
+      --green-bg:        #F5FBF5;
+      --green-surface:   #F1F8E9;
+      --green-card:      #ffffff;
+      --green-border:    #C8E6C9;
+      --gold:            #D4AF37;
+      --text-primary:    #1B3A1B;
+      --text-secondary:  #4A6B4A;
+    }
+
+    /* ── Base ── */
+    body {
+      background-color: var(--green-bg);
+      color: var(--text-primary);
+      font-family: 'Cairo', sans-serif;
+      line-height: 1.8;
+    }
+    body.lang-en {
+      font-family: 'Poppins', sans-serif;
+      direction: ltr;
+      text-align: left;
+    }
+
+    /* ── Hero Header ── */
+    .hero {
+      background: linear-gradient(135deg, var(--green-gradient1) 0%, var(--green-gradient2) 100%);
+      color: #fff;
+      padding: 60px 0 50px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      border: 3px solid rgba(255,255,255,0.3);
+      object-fit: cover;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+    .hero p.subtitle {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+    .hero .badge-date {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 4px 14px;
+      border-radius: 50px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* ── Lang Toggle ── */
+    .lang-toggle-bar {
+      background: var(--green-surface);
+      border-bottom: 1px solid var(--green-border);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(46,125,79,0.08);
+    }
+    .lang-btn {
+      border: 2px solid var(--green-primary);
+      color: var(--green-primary);
+      background: transparent;
+      border-radius: 50px;
+      padding: 5px 22px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--green-primary);
+      color: #fff;
+    }
+
+    /* ── Section Cards ── */
+    .policy-card {
+      background: var(--green-card);
+      border: 1px solid var(--green-border);
+      border-radius: 18px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 16px rgba(46,125,79,0.07);
+      transition: box-shadow 0.2s;
+    }
+    .policy-card:hover {
+      box-shadow: 0 6px 28px rgba(46,125,79,0.14);
+    }
+    .policy-card .section-icon {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, var(--green-gradient1), var(--green-gradient2));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .policy-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+    }
+    .policy-card p, .policy-card li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+    .policy-card ul {
+      padding-inline-start: 20px;
+    }
+
+    /* ── Highlight box ── */
+    .highlight-box {
+      background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+      border-left: 4px solid var(--green-primary);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      color: var(--green-dark);
+      font-weight: 600;
+    }
+    .lang-en .highlight-box {
+      border-left: 4px solid var(--green-primary);
+      border-right: none;
+    }
+    [dir="rtl"] .highlight-box {
+      border-left: none;
+      border-right: 4px solid var(--green-primary);
+    }
+
+    /* ── Contact Card ── */
+    .contact-card {
+      background: linear-gradient(135deg, var(--green-gradient1), var(--green-gradient2));
+      color: #fff;
+      border-radius: 18px;
+      padding: 32px;
+      text-align: center;
+    }
+    .contact-card a {
+      color: #fff;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--green-dark);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 22px 0;
+      font-size: 0.85rem;
+    }
+    footer strong {
+      color: #fff;
+    }
+
+    /* ── Content Visibility ── */
+    [data-lang] { display: none; }
+    .lang-ar [data-lang="ar"] { display: block; }
+    .lang-en [data-lang="en"] { display: block; }
+
+    /* ── Responsive ── */
+    @media (max-width: 576px) {
+      .hero h1 { font-size: 1.5rem; }
+      .policy-card { padding: 20px 18px; }
+    }
+  </style>
+</head>
+
+<body class="lang-ar">
+
+  <!-- ── Hero ── -->
+  <div class="hero">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center text-center gap-3">
+        <img src="pray.png" alt="Qadaa Prayer Tracker" class="hero-logo" />
+        <div data-lang="ar">
+          <h1>سياسة الخصوصية</h1>
+          <p class="subtitle">تطبيق قضاء الصلاة — تتبع صلواتك الفائتة</p>
+          <span class="badge-date"><i class="bi bi-calendar3 me-1"></i> آخر تحديث: مارس 2026</span>
+        </div>
+        <div data-lang="en">
+          <h1>Privacy Policy</h1>
+          <p class="subtitle">Qadaa Prayer Tracker — Track Your Missed Prayers</p>
+          <span class="badge-date"><i class="bi bi-calendar3 me-1"></i> Last updated: March 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Language Toggle ── -->
+  <div class="lang-toggle-bar">
+    <div class="container d-flex justify-content-center gap-3">
+      <button class="lang-btn active" id="btn-ar" onclick="setLang('ar')">
+        <i class="bi bi-translate me-1"></i> العربية
+      </button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">
+        <i class="bi bi-translate me-1"></i> English
+      </button>
+    </div>
+  </div>
+
+  <!-- ── Main Content ── -->
+  <main class="container py-5" style="max-width:820px;">
+
+    <!-- ══════════════ ARABIC ══════════════ -->
+    <div data-lang="ar">
+
+      <div class="highlight-box mb-4">
+        <i class="bi bi-shield-check me-2"></i>
+        خصوصيتك تهمنا. هذا التطبيق لا يجمع أي بيانات شخصية دون إذنك الصريح.
+      </div>
+
+      <!-- 1 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-info-circle"></i></div>
+        <div>
+          <h3>١. نظرة عامة</h3>
+          <p>
+            تطبيق <strong>قضاء الصلاة</strong> هو تطبيق إسلامي يساعدك على تتبع صلواتك الفائتة وقضائها.
+            نلتزم بحماية خصوصيتك وأمان بياناتك الشخصية بشكل كامل.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-database"></i></div>
+        <div>
+          <h3>٢. البيانات التي نجمعها</h3>
+          <ul>
+            <li><strong>البيانات المحلية:</strong> يُخزَّن عدد الصلوات المكتملة محلياً على جهازك فقط باستخدام Hive، ولا تُرسل لأي خادم.</li>
+            <li><strong>النسخ الاحتياطي (اختياري):</strong> إذا اخترت تسجيل الدخول بحساب Google، يتم حفظ بياناتك على Firebase Firestore الخاص بك فقط.</li>
+            <li><strong>الإعلانات:</strong> يستخدم التطبيق Google AdMob الذي قد يجمع معرّف الجهاز وبيانات مجهولة الهوية لعرض الإعلانات.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-phone"></i></div>
+        <div>
+          <h3>٣. التخزين المحلي</h3>
+          <p>
+            جميع بيانات تتبع الصلوات (عدد السنوات، الصلوات المنجزة، الإعدادات) تُحفظ محلياً على جهازك فقط.
+            لا يتم إرسال هذه البيانات لأي طرف ثالث دون موافقتك.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-cloud-upload"></i></div>
+        <div>
+          <h3>٤. النسخ الاحتياطي السحابي</h3>
+          <p>
+            خاصية النسخ الاحتياطي اختيارية بالكامل. عند تفعيلها:
+          </p>
+          <ul>
+            <li>يتم تسجيل الدخول باستخدام حساب Google الخاص بك.</li>
+            <li>تُحفظ بياناتك في Firebase Firestore تحت حسابك الشخصي.</li>
+            <li>لا يطّلع أحد على بياناتك سواك.</li>
+            <li>يمكنك حذف بياناتك في أي وقت من داخل التطبيق.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-megaphone"></i></div>
+        <div>
+          <h3>٥. الإعلانات (Google AdMob)</h3>
+          <p>
+            يستخدم التطبيق Google AdMob لعرض إعلانات البانر. قد تجمع Google المعلومات التالية:
+          </p>
+          <ul>
+            <li>معرّف الإعلانات للجهاز (Advertising ID)</li>
+            <li>بيانات الاستخدام المجهولة الهوية</li>
+            <li>معلومات الموقع العام (إذا أُتيح)</li>
+          </ul>
+          <p>
+            للمزيد، راجع <a href="https://policies.google.com/privacy" target="_blank" class="text-success fw-semibold">سياسة خصوصية Google</a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-person-lock"></i></div>
+        <div>
+          <h3>٦. حقوقك</h3>
+          <ul>
+            <li>يمكنك إعادة تعيين جميع بياناتك من داخل التطبيق (إعدادات ← إعادة التعيين).</li>
+            <li>يمكنك تسجيل الخروج وحذف النسخة الاحتياطية في أي وقت.</li>
+            <li>يمكنك تعطيل إعلانات AdMob من إعدادات الجهاز ← الإعلانات.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-shield-lock"></i></div>
+        <div>
+          <h3>٧. الأمان</h3>
+          <p>
+            نستخدم Firebase Security Rules لحماية بيانات النسخ الاحتياطي. لا يمكن لأي مستخدم آخر الوصول إلى بياناتك.
+            البيانات المحلية محمية بنظام حماية الجهاز نفسه.
+          </p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-people"></i></div>
+        <div>
+          <h3>٨. الأطفال</h3>
+          <p>
+            التطبيق غير موجه للأطفال دون سن 13 عاماً. لا نجمع بيانات معروفة تخص الأطفال بشكل متعمد.
+          </p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-arrow-repeat"></i></div>
+        <div>
+          <h3>٩. تحديثات السياسة</h3>
+          <p>
+            قد نحدّث هذه السياسة من وقت لآخر. سيتم إشعارك بأي تغييرات جوهرية عبر التطبيق.
+            تاريخ آخر تحديث يظهر في أعلى الصفحة.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact-card mt-4">
+        <i class="bi bi-envelope-heart fs-2 mb-2"></i>
+        <h4 class="fw-bold mb-2">تواصل معنا</h4>
+        <p class="mb-1" style="opacity:0.9;">إذا كان لديك أي استفسار حول سياسة الخصوصية:</p>
+        <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a>
+      </div>
+
+    </div><!-- /ar -->
+
+    <!-- ══════════════ ENGLISH ══════════════ -->
+    <div data-lang="en">
+
+      <div class="highlight-box mb-4">
+        <i class="bi bi-shield-check me-2"></i>
+        Your privacy matters. This app does not collect any personal data without your explicit consent.
+      </div>
+
+      <!-- 1 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-info-circle"></i></div>
+        <div>
+          <h3>1. Overview</h3>
+          <p>
+            <strong>Qadaa Prayer Tracker</strong> is an Islamic app that helps you track and complete your missed prayers.
+            We are fully committed to protecting your privacy and the security of your personal data.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-database"></i></div>
+        <div>
+          <h3>2. Data We Collect</h3>
+          <ul>
+            <li><strong>Local Data:</strong> Completed prayer counts are stored locally on your device using Hive and are never sent to any server.</li>
+            <li><strong>Cloud Backup (Optional):</strong> If you choose to sign in with Google, your data is saved only to your own Firebase Firestore account.</li>
+            <li><strong>Advertising:</strong> The app uses Google AdMob which may collect your device advertising ID and anonymized usage data to serve ads.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-phone"></i></div>
+        <div>
+          <h3>3. Local Storage</h3>
+          <p>
+            All prayer tracking data (years, completed prayers, settings) is saved locally on your device only.
+            This data is never transmitted to any third party without your consent.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-cloud-upload"></i></div>
+        <div>
+          <h3>4. Cloud Backup</h3>
+          <p>The cloud backup feature is entirely optional. When enabled:</p>
+          <ul>
+            <li>You sign in using your Google account.</li>
+            <li>Your data is saved in Firebase Firestore under your personal account.</li>
+            <li>No one else can access your data.</li>
+            <li>You can delete your data at any time from within the app.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-megaphone"></i></div>
+        <div>
+          <h3>5. Advertising (Google AdMob)</h3>
+          <p>The app uses Google AdMob to display banner ads. Google may collect:</p>
+          <ul>
+            <li>Device Advertising ID</li>
+            <li>Anonymized usage data</li>
+            <li>General location information (if permitted)</li>
+          </ul>
+          <p>
+            For more details, see <a href="https://policies.google.com/privacy" target="_blank" class="text-success fw-semibold">Google's Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-person-lock"></i></div>
+        <div>
+          <h3>6. Your Rights</h3>
+          <ul>
+            <li>You can reset all your data from within the app (Settings → Reset Progress).</li>
+            <li>You can sign out and delete your cloud backup at any time.</li>
+            <li>You can disable AdMob personalized ads via Device Settings → Privacy → Ads.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-shield-lock"></i></div>
+        <div>
+          <h3>7. Security</h3>
+          <p>
+            We use Firebase Security Rules to protect your backup data. No other user can access your data.
+            Local data is protected by your device's own security system.
+          </p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-people"></i></div>
+        <div>
+          <h3>8. Children</h3>
+          <p>
+            This app is not directed at children under the age of 13. We do not knowingly collect data from children.
+          </p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="policy-card d-flex gap-3">
+        <div class="section-icon"><i class="bi bi-arrow-repeat"></i></div>
+        <div>
+          <h3>9. Policy Updates</h3>
+          <p>
+            We may update this policy from time to time. You will be notified of any significant changes through the app.
+            The last updated date appears at the top of this page.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact-card mt-4">
+        <i class="bi bi-envelope-heart fs-2 mb-2"></i>
+        <h4 class="fw-bold mb-2">Contact Us</h4>
+        <p class="mb-1" style="opacity:0.9;">If you have any questions about this Privacy Policy:</p>
+        <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a>
+      </div>
+
+    </div><!-- /en -->
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <span data-lang="ar">© 2026 <strong>قضاء الصلاة</strong> — جميع الحقوق محفوظة</span>
+    <span data-lang="en">© 2026 <strong>Qadaa Prayer Tracker</strong> — All rights reserved</span>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function setLang(lang) {
+      const body = document.body;
+      const html = document.getElementById('html-root');
+
+      // Toggle body classes
+      body.classList.remove('lang-ar', 'lang-en');
+      body.classList.add('lang-' + lang);
+
+      // Set HTML dir + lang
+      html.setAttribute('lang', lang === 'ar' ? 'ar' : 'en');
+      html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+      // Toggle Bootstrap RTL stylesheet
+      const bsLink = document.getElementById('bs-link');
+      if (lang === 'ar') {
+        bsLink.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css';
+      } else {
+        bsLink.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
+      }
+
+      // Toggle active button
+      document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+
+  <!-- Move Bootstrap link to be dynamic -->
+  <script>
+    // Replace the static link with a dynamic one
+    const links = document.querySelectorAll('link[rel="stylesheet"]');
+    links[0].id = 'bs-link';
+  </script>
+</body>
+</html>
