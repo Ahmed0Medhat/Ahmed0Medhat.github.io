@@ -1,106 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – Whatsii</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Whatsii Privacy Policy</title>
   <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f7f5;
+      --surface: #ffffff;
+      --text: #17211b;
+      --muted: #526158;
+      --accent: #128c4a;
+      --border: #dce5df;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1511;
+        --surface: #18211b;
+        --text: #eef7f1;
+        --muted: #b1beb5;
+        --accent: #53d889;
+        --border: #334239;
+      }
+    }
+    * { box-sizing: border-box; }
     body {
-      background-color: #f9fafb;
-      font-family: "Segoe UI", sans-serif;
-      color: #333;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
     }
-    .container {
-      max-width: 850px;
-      margin-top: 60px;
-      background: #fff;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
     }
-    h1, h2 {
-      color: #1e7b34;
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    a { color: var(--accent); }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .04em; }
+    .updated { margin-top: .5rem; }
+    .summary {
+      margin: 1.5rem 0;
+      padding: 16px 18px;
+      border-inline-start: 4px solid var(--accent);
+      background: color-mix(in srgb, var(--accent) 8%, var(--surface));
     }
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      color: #888;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #1e7b34;
-    }
+    footer { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
   </style>
 </head>
 <body>
+  <main>
+    <div class="eyebrow">WHATSII</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated"><strong>Effective and last updated:</strong> September 10, 2026</p>
 
-  <div class="container">
-    <h1 class="text-center mb-4">Privacy Policy</h1>
-    <h2 class="text-center mb-3">Whatsii – Without Saving Number</h2>
-
-    <p><strong>Last Updated:</strong> November 2025</p>
-
-    <p>
-      This Privacy Policy explains how <strong>Whatsii</strong> (“we”, “our”, or “us”) handles user data. 
-      By using the app, you agree to this Privacy Policy.
+    <p class="summary">
+      Whatsii lets you open a WhatsApp chat without adding the recipient to your contacts.
+      Phone numbers and message templates you choose to save stay on your device. We do not
+      operate an account system or a server that receives this content. The app displays ads
+      through Google AdMob, which processes certain device and usage data as described below.
     </p>
 
-    <h4>1. Information We Do Not Collect</h4>
+    <h2>1. Who we are</h2>
     <p>
-      Whatsii does <strong>not collect, store, share, or process any personal information</strong> from users.  
-      The app does not request access to contacts, storage, camera, microphone, or any personal data.
+      This policy applies to <strong>Whatsii – Without Saving Number</strong>, package
+      <code>com.ahmedmedhat.whatsii.launcher</code>, developed by Ahmed Medhat. Questions can
+      be sent to <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a>.
     </p>
 
-    <h4>2. How the App Works</h4>
-    <p>
-      Whatsii is a simple utility tool that allows users to open WhatsApp chats directly by entering a phone number.  
-      The app simply constructs a WhatsApp deep link (<code>whatsapp://send?phone=...</code>) and redirects the user to WhatsApp.  
-      No information is saved or transmitted to our servers.
-    </p>
-
-    <h4>3. Third-Party Services</h4>
-    <p>
-      Whatsii does not use third-party analytics, ads, or SDKs that collect user data.  
-      If Google Play Services or WhatsApp process any data, it is handled under their respective privacy policies:
-    </p>
+    <h2>2. Information you enter or share</h2>
     <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-      <li><a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">WhatsApp Privacy Policy</a></li>
+      <li><strong>Phone numbers and messages:</strong> the app processes the number and optional message you enter to create a WhatsApp or WhatsApp Web link.</li>
+      <li><strong>Share menu:</strong> on Android, text you deliberately share to Whatsii is processed to fill the phone-number or message field.</li>
+      <li><strong>Clipboard:</strong> Whatsii reads clipboard text only after you tap the Paste button.</li>
+      <li><strong>QR scanning:</strong> the camera is used only when you open the QR scanner. Whatsii does not save camera images or video. The decoded QR text is used to fill the relevant field.</li>
     </ul>
-
-    <h4>4. Children’s Privacy</h4>
     <p>
-      Whatsii is intended for general users and does not target children.  
-      We comply with <strong>Google Play’s Child Safety Standards</strong> and prohibit any form of exploitation or inappropriate content.
+      This content is processed on the device. We do not receive it on a developer-operated
+      server. When you choose to open a chat, the selected phone number and message are passed
+      to WhatsApp or WhatsApp Web, whose handling of that information is governed by
+      <a href="https://www.whatsapp.com/legal/privacy-policy" rel="noopener noreferrer">WhatsApp's Privacy Policy</a>.
     </p>
 
-    <h4>5. Security</h4>
+    <h2>3. Information stored on your device</h2>
+    <p>Whatsii can store the following locally when you use the related features:</p>
+    <ul>
+      <li>recently used phone numbers and the selected WhatsApp app;</li>
+      <li>phone numbers you mark as favorites; and</li>
+      <li>message templates you explicitly save.</li>
+    </ul>
     <p>
-      Since the app does not collect or store any data, no user information is at risk.  
-      The app only uses the WhatsApp deep linking mechanism provided by the WhatsApp API.
+      These items remain on your device until you remove them in the app, clear Whatsii's app
+      data, or uninstall the app. They are not synced to a Whatsii account or developer server.
     </p>
 
-    <h4>6. Changes to This Policy</h4>
+    <h2>4. Advertising and Google Mobile Ads</h2>
     <p>
-      We may update this Privacy Policy from time to time.  
-      Any changes will be reflected on this page with the updated date shown above.
+      Whatsii uses Google AdMob and the Google Mobile Ads SDK to display banner advertising.
+      According to Google's SDK disclosure, Google Mobile Ads may automatically collect and
+      share IP address (which may be used to estimate approximate location), app interactions,
+      diagnostic information, and device or account identifiers such as the Android advertising
+      ID. Google uses this information for advertising, analytics, and fraud prevention.
+    </p>
+    <p>
+      Where required, Whatsii uses Google's User Messaging Platform (UMP) to request consent
+      before requesting ads and to provide a Privacy choices entry point. Advertising data is
+      handled under the
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>
+      and Google's
+      <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">Advertising Policies and Technologies</a>.
+      You can also manage advertising controls through your device and Google account settings.
     </p>
 
-    <h4>7. Contact Us</h4>
+    <h2>5. Permissions</h2>
+    <ul>
+      <li><strong>Internet:</strong> required for advertising and the WhatsApp Web fallback.</li>
+      <li><strong>Camera:</strong> requested only when you use the QR scanner.</li>
+    </ul>
     <p>
-      If you have any questions or concerns about this Privacy Policy or data protection practices, you can contact us at:
+      Whatsii does not request access to contacts, precise or coarse device location,
+      microphone, call logs, SMS, or notification permissions. Google may infer approximate
+      location from the device IP address for advertising without Whatsii requesting Android
+      location permission.
     </p>
 
+    <h2>6. Data sharing and international processing</h2>
     <p>
-      📧 <strong>Email:</strong> 
-      <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a>
+      We do not sell your user-entered phone numbers or messages. Information may be processed
+      by Google for advertising and by WhatsApp when you initiate a chat, as explained above.
+      These providers may process information in countries other than your own under their
+      respective privacy policies and legal safeguards.
     </p>
 
-    <footer>
-      &copy; 2025 Whatsii – Developed by Ahmed Medhat. All Rights Reserved.
-    </footer>
-  </div>
+    <h2>7. Retention, deletion, and your choices</h2>
+    <ul>
+      <li>Delete individual favorites, recent entries, or templates using the controls in the app.</li>
+      <li>Use the available clear actions for recent numbers and message templates.</li>
+      <li>Clear the app's storage or uninstall Whatsii to remove all locally saved Whatsii data.</li>
+      <li>Use Privacy choices in the app when shown to review advertising consent options.</li>
+    </ul>
+    <p>
+      Whatsii has no user accounts and therefore has no account record to delete from a
+      developer server. For data controlled by Google or WhatsApp, use the controls and contact
+      methods described in their privacy policies.
+    </p>
 
+    <h2>8. Security</h2>
+    <p>
+      We limit app permissions and keep saved Whatsii content in the app's local storage.
+      No method of storage or transmission is completely secure, and third-party services are
+      responsible for the security of data they process.
+    </p>
+
+    <h2>9. Children's privacy</h2>
+    <p>
+      Whatsii is a general-audience utility and is not directed to children under 13. If you
+      believe a child has provided information to us directly, contact us at the address below.
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>
+      We may update this policy when the app, its SDKs, or legal requirements change. The
+      effective date at the top of this page identifies the latest revision.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      For privacy questions, contact Ahmed Medhat at
+      <a href="mailto:a7mdmedhat2011@gmail.com">a7mdmedhat2011@gmail.com</a>.
+    </p>
+
+    <footer>© 2026 Ahmed Medhat. Whatsii Privacy Policy.</footer>
+  </main>
 </body>
 </html>
