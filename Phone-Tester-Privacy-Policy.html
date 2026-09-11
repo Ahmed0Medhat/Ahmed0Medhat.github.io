@@ -36,7 +36,8 @@
   <p>The app accesses device APIs only for diagnostics you choose. These may include sensor readings, battery and device information, network and Bluetooth state, NFC, camera, microphone, flashlight, vibration, and precise location.</p>
   <ul>
     <li>Raw sensor readings and location coordinates are displayed while the relevant screen is open. They are not stored in the saved diagnostic summary.</li>
-    <li>The local summary contains only a test identifier, status, short description, and timestamp.</li>
+    <li>The local diagnostic history contains test counts, an overall score, timestamp, and—when Android provides them—battery level and temperature.</li>
+    <li>It does not store location coordinates, raw sensor streams, photos, audio, SIM identifiers, phone numbers, or biometric data. The Android advanced check reads only the SIM readiness state and modem count.</li>
     <li>Camera captures are deleted immediately. Microphone samples are temporary and deleted when replaced, confirmed, or when you leave the screen.</li>
     <li>PDF reports are generated locally in temporary storage and shared only with a destination you choose.</li>
     <li>You can clear saved results in the app. Android app backup is disabled.</li>
